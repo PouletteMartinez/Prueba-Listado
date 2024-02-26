@@ -1,0 +1,21 @@
+.container-table {
+    width: 100%;
+}
+
+.container-filter {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container-filter .mat-mdc-form-field {
+    width: 100% !important;
+}
+
+.container-table table {
+    width: 100%;
+}
+
+td {
+    cursor: pointer;
+}

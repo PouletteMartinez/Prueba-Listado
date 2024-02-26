@@ -1,0 +1,23 @@
+<div class="container-card">
+    <div class="container-close" mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </div>
+    <div class="container-img">
+        <label>ID User: {{data.id}}</label>
+        <img src="../../../assets/profile-circle-icon-2048x2048-cqe5466q.png" alt="">
+    </div>
+
+    <div class="container-date">
+        <h2>Name: {{data.name}}</h2>
+        <p>Email: {{data.email}}</p>
+        <label>Phone: {{data.phone}}</label>
+    </div>
+
+    <div class="container-extras">
+        <p>ID Data: {{data.response.id}}</p>
+        <p>Description: {{data.response.title}}</p>
+        <mat-chip [ngClass]="{ 'green-chip': data.response.completed, 'red-chip': !data.response.completed }">
+            Status: {{ data.response.completed ? 'Completed' : 'Not Completed' }}
+          </mat-chip>
+    </div>
+</div>
