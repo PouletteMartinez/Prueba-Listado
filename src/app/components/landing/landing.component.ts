@@ -19,8 +19,6 @@ constructor(private userService: ListUsersService) {
   this.getUsers();
 }
 
-
-
 getUsers(): void {
   this.userService.getListUsers().subscribe(response => {
     this.list = response;
